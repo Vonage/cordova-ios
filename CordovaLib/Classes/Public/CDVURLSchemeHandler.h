@@ -24,7 +24,7 @@
 
 @interface CDVURLSchemeHandler : NSObject <WKURLSchemeHandler>
 
-@property (nonatomic, strong) CDVViewController* viewController;
+@property (nonatomic, weak) CDVViewController* viewController;
 
 - (instancetype)initWithVC:(CDVViewController *)controller;
 
