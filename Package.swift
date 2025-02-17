@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Cordova",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v14)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
@@ -26,11 +26,6 @@ let package = Package(
                 .headerSearchPath("Cordova"),
                 .headerSearchPath("Classes/Public"),
                 .headerSearchPath("Classes/Private"),
-//                .headerSearchPath("Classes/Private/Plugins/CDVGestureHandler"),
-//                .headerSearchPath("Classes/Private/Plugins/CDVHandleOpenURL"),
-//                .headerSearchPath("Classes/Private/Plugins/CDVIntentAndNavigationFilter"),
-//                .headerSearchPath("Classes/Private/Plugins/CDVLaunchScreen"),
-//                .headerSearchPath("Classes/Private/Plugins/CDVLogger"),
                 .headerSearchPath("Classes/Private/Plugins/CDVWebViewEngine/")
             ]
         )
